@@ -1,21 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Nav from './components/Nav';
 import './index.css';
 import './App.css';
 import "antd/dist/antd.css";
 import 'tailwindcss/tailwind.css'
+import BodyContainer from './pages/BodyContainer/BodyContainer'
 
 function App() {
   return (
-    <>
-    <body className="bg-zinc-600">
-    <div className="App">
-    <Nav></Nav>
+    <body className="bg-[#E5E5E5]">
+    <div className="App flex flex-row justify-center">
+      <BodyContainer />
     </div>
     </body>
-    </>
   );
 }
 
