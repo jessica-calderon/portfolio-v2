@@ -18,7 +18,11 @@ function Blurbs() {
 				</span>
         <span className="font-semibold text-[#FA6E29]">My Main Tech Stack:</span>
         <span className="font-normal">
-          React, TypeScript, Tailwind, Node.js
+          React, TypeScript, Tailwind, Node.js, npm, Github
+        </span>
+        <span className="font-semibold text-[#FA6E29]">Other Technology:</span>
+        <span className="font-normal">
+        Markdown, Bootstrap, JavaScript, jQuery, Express, Jest, mongodb, mysql, git, GitLab, Heroku, Adobe Illustrator, Photoshop, bash,Powershell, Raspberry Pi, Regex, Wordpress
         </span>
 			</div>
 		</div>
