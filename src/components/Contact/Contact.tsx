@@ -4,11 +4,11 @@ import { FaEnvelope, FaGithubAlt, FaLinkedin } from 'react-icons/fa';
 
 function Contact() {
 	return (
-		<div className="flex flex-col h-[200px] border border-[#64A4CE]">
+		<div className="flex flex-col h-full border border-[#64A4CE]">
 			<div className="flex p-2 items-center text-left h-[25px] bg-[#64A4CE] text-white font-bold">
 				Contacting Jessica
 			</div>
-			<div className="flex flex-row items-center justify-start px-4 py-2">
+			<div className="flex flex-row items-center justify-start p-2">
 				<ContactBtn
 					label={'Email'}
 					icon={<FaEnvelope />}
@@ -20,7 +20,7 @@ function Contact() {
 					link={'https://github.com/jessica-calderon'}
 				/>
 			</div>
-			<div className="flex flex-row items-center justify-start px-4 py-2">
+			<div className="flex flex-row items-center justify-start p-2">
 				<ContactBtn
 					label={'LinkedIn'}
 					icon={<FaLinkedin />}

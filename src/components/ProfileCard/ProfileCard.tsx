@@ -9,11 +9,11 @@ interface ProfileCardProps {
 const ProfileCard: React.FC<ProfileCardProps> = ({ name, bio }) => {
 	return (
 		<div className="flex-col p-4">
-			<div className="flex flex-row w-full">
+			<div className="flex flex-row w-full text-left">
 				<h2 className="text-lg font-bold">{name}</h2>
 			</div>
 
-			<div className="flex flex-row gap-2 p-1">
+			<div className="flex flex-row gap-2 p-1 items-left justify-start">
 				<img
 					className="h-16 w-16 object-cover"
 					src="https://myspace.com/common/images/user.png"
