@@ -15,12 +15,12 @@ const ProfileCard: React.FC<ProfileCardProps> = ({ name, bio }) => {
 
 			<div className="flex flex-row gap-2 p-1">
 				<img
-					className="h-16 w-16 rounded-full object-cover"
-					src="https://via.placeholder.com/150x150.png?text=No+Profile+Pic"
+					className="h-16 w-16 object-cover"
+					src="https://myspace.com/common/images/user.png"
 					alt="No profile pic"
 				/>
-				<div className="text-left">
-					<p className="text-gray-600 w-[100px]">{bio}</p>
+				<div className="text-left ">
+					<p className="text-gray-600">{bio}</p>
 				</div>
 			</div>
 		</div>
