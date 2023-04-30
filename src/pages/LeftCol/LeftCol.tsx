@@ -6,7 +6,7 @@ import Interests from '../../components/Interests/Interests';
 function LeftCol() {
 	return (
 		<div className="flex flex-col gap-2">
-			<ProfileCard name="Jessica E. Calderon" bio="Software Engineer" />
+			<ProfileCard name="Jessica E. Calderon" bio="Software Engineer" pronouns={'She/Her'} location={'Texas'} />
 			<Contact />
 			<Interests />
 		</div>

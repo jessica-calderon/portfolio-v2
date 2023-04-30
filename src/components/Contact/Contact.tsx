@@ -1,6 +1,6 @@
 import React from 'react';
 import ContactBtn from './ContactBtn';
-import { FaEnvelope, FaGithubAlt, FaLinkedin } from 'react-icons/fa';
+import { FaEnvelope, FaGithubAlt, FaLinkedin, FaComment } from 'react-icons/fa';
 
 function Contact() {
 	return (
@@ -24,6 +24,11 @@ function Contact() {
 				<ContactBtn
 					label={'LinkedIn'}
 					icon={<FaLinkedin />}
+					link={'https://LinkedIn.com/in/jessica-calderon'}
+				/>
+								<ContactBtn
+					label={'Message'}
+					icon={<FaComment />}
 					link={'https://LinkedIn.com/in/jessica-calderon'}
 				/>
 			</div>

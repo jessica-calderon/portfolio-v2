@@ -4,9 +4,9 @@ function Blurbs() {
 	return (
 		<div className="flex flex-col h-full">
 			<div className="px-1 flex w-full h-[25px] items-center bg-[#E4BF82] font-semibold text-[#FA6E29] ">
-				Jessica's Blurbs
+				<span className='ml-px'>Jessica's Blurbs</span>
 			</div>
-			<div className="text-left flex flex-col gap-1 h-full">
+			<div className="text-left ml-1 flex flex-col gap-1 h-full">
 				<span className="font-semibold text-[#FA6E29]">About Me:</span>
 				<span className="font-normal">
 					Hey, I'm Jessica. I'm a San Antonio-based Front End Web
