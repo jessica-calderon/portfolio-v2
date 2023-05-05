@@ -1,13 +1,14 @@
+import Footer from '../../components/Footer/Footer';
 import Navbar from '../../components/Navbar/Navbar';
-import Status from '../../components/Status/Status';
 import TopBanner from '../../components/TopBanner/TopBanner';
-import Blurbs from '../../components/Blurbs/Blurbs';
 import LeftCol from '../LeftCol/LeftCol';
 import RightCol from '../RightCol/RightCol';
 
 function BodyContainer() {
 	return (
-		<div className="flex flex-col w-[70%] h-full bg-white">
+		<div className="flex flex-col w-full items-center justify-center">
+			<div className="flex flex-col w-full items-center justify-center"></div>
+			<div className="flex flex-col w-[70%] h-full bg-white">
 			<TopBanner />
 			<Navbar />
 
@@ -19,6 +20,11 @@ function BodyContainer() {
 					<RightCol />
 				</div>
 			</div>
+
+		</div>
+		<div className="w-full flex flex-row items-center justify-center text-center">
+		<Footer />
+		</div>
 		</div>
 	);
 }

@@ -25,7 +25,7 @@ function TopProjects() {
     <div className="px-1 flex w-full h-[25px] items-center bg-[#E4BF82] font-semibold text-[#FA6E29] ">
       <span className='ml-px'>Jessica's Portfolio</span>
     </div>
-    <div className="image-grid text-left ml-1 flex ">
+    <div className="image-grid text-left ml-1 flex justify-between w-full">
       <ImageGrid images={images} labels={labels} onClick={handleImageClick}/>
  
     </div>

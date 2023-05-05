@@ -13,7 +13,7 @@ const placeholderImage = "https://via.placeholder.com/300x300";
 const ImageGrid: React.FC<Props> = ({ images, labels, onClick }) => {
     return (
         <div className='flex flex-col'>
-            <div className='flex flex-row gap-4'>
+            <div className='flex flex-row gap-8 justify-between w-full'>
                 <ClickableImage
                     label={"One"}
                     src={"https://via.placeholder.com/300x300"}
@@ -43,7 +43,7 @@ const ImageGrid: React.FC<Props> = ({ images, labels, onClick }) => {
                     }}
                 />
             </div>
-            <div className='flex flex-row gap-4'>
+            <div className='flex flex-row gap-8 justify-between w-full'>
                 <ClickableImage
                     label={"Five"}
                     src={"https://via.placeholder.com/300x300"}
