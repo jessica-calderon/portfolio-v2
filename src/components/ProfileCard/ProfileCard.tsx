@@ -40,7 +40,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({ name, bio, pronouns, state, c
 
             <div className='flex flex-row p-1 items-center justify-start'>
                 <div>
-                    <img className='h-[150px] w-[150px] object-cover' src={EightBitMe} alt='8 Bit Jessica' />
+                    <img className='md:h-[150px] w-[150px] object-cover' src={EightBitMe} alt='8 Bit Jessica' />
                     <div className='flex flex-row items-center mt-2 ml-1'>
                         <span className='text-xs font-bold'>Mood:</span>
                         <span className='text-xs ml-1'>motivated 😈</span>
