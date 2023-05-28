@@ -8,7 +8,7 @@ import Schools from '../../components/Schools/Schools';
 function LeftCol() {
 	return (
 		<div className="flex flex-col gap-2">
-			<ProfileCard name="Jessica E. Calderon" bio="Software Engineer" pronouns={'She/Her'} location={'Texas'} />
+			<ProfileCard name="Jessica E. Calderon" bio="Software Engineer" pronouns={'She/Her'} state={'TEXAS'} country={'United States'} lastUpdated={'05/2023'} />
 			<Contact />
 			<Interests />
 			<Details />

@@ -1,34 +1,44 @@
-import React from 'react';
-import ProfilePic from '../../assets/ProfilePic.png';
+import React from "react";
+import EightBitMe from "../../assets/images/8bitme.png";
 
 interface ProfileCardProps {
-	name: string;
-	bio: string;
-	pronouns: string;
-	location: string;
+    name: string;
+    bio: string;
+    pronouns: string;
+    state: string;
+    country: string;
+    lastUpdated: string | number;
 }
 
-const ProfileCard: React.FC<ProfileCardProps> = ({ name, bio, pronouns, location }) => {
-	return (
-		<div className="flex-col p-2">
-			<div className="flex flex-row w-full text-left">
-				<h2 className="text-lg font-bold">{name}</h2>
-			</div>
+const ProfileCard: React.FC<ProfileCardProps> = ({ name, bio, pronouns, state, country, lastUpdated }) => {
+    return (
+        <div className='flex-col p-2'>
+            <div className='flex flex-row w-full text-left'>
+                <h2 className='text-lg font-bold'>{name}</h2>
+            </div>
 
-			<div className="flex flex-row p-1 items-left justify-start">
-				<img
-					className="h-16 w-16 object-cover"
-					src="https://myspace.com/common/images/user.png"
-					alt="No profile pic"
-				/>
-				<div className="text-left flex flex-col ml-4">
-					<p className="text-gray-600">{bio}</p>
-					<p className="text-gray-600">{pronouns}</p>
-					<p className="text-gray-600">{location}</p>
-				</div>
-			</div>
-		</div>
-	);
+            <div className='flex flex-row p-1 items-center justify-start'>
+                <div>
+                    <img className='h-[150px] w-[150px] object-cover' src={EightBitMe} alt='8 Bit Jessica' />
+                    <div className='flex flex-row items-center mt-2 ml-1'>
+                        <span className='text-xs font-bold'>Mood:</span>
+                        <span className='text-xs ml-1'>motivated 😈</span>
+                    </div>
+                    <div className='flex flex-row items-center mt-2 ml-1'>
+                        <span className='text-xs font-semibold'>View My:</span>
+                        <span className='text-xs font-bold mx-1 text-[#2653a7]'>Resume</span> | <span className='text-xs font-bold ml-1 text-[#2653a7]'>Archive</span>
+                    </div>
+                </div>
+                <div id='about' className='text-left flex flex-col ml-4'>
+                    <p className='text-gray-600'>{bio}</p>
+                    <p className='text-gray-600'>{pronouns}</p>
+                    <p className='text-gray-600'>{state}</p>
+                    <p className='text-gray-600'>{country}</p>
+                    <p className='text-gray-600'>Last Updated: {lastUpdated}</p>
+                </div>
+            </div>
+        </div>
+    );
 };
 
 export default ProfileCard;

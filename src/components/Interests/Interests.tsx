@@ -2,10 +2,11 @@ import React from 'react';
 
 const interests = [
 	{ category: 'General', text: '3D Printing, Making Things, Dogs' },
-	{ category: 'Music', text: 'Lorem Ipsum blah blah blah' },
-	{ category: 'Movies', text: 'Lorem Ipsum blah blah blah' },
-	{ category: 'TV', text: 'Lorem Ipsum blah blah blah' },
-	{ category: 'Books', text: 'Lorem Ipsum blah blah blah' }
+	{ category: 'Music', text: 'Taylor Swift, The Maine, Halsey, Bishop Briggs, K Flay, The Pixies, The Cure, Mudvayne, Neutral Milk Hotel, Doja Cat, Brian Jonestown Massacre' },
+	{ category: "Movies", text: "Evil Dead, Just Friends, Mean Girls, Bad Teacher, She's The Man, Death Proof"},
+	{ category: 'TV', text: 'Abbott Elementary, The Good Doctor, Buffy The Vampire Slayer, 90 Day Fiance, Love Island, Degrassi, Yellowjackets ...a bunch more' },
+	{ category: 'Games', text: 'Bioshock Series, GTA V, TLOU, Uncharted Series, Spiderman Series, NFS Unbound ...and more' },
+	
 ];
 
 const Interests: React.FC = () => {
