@@ -1,9 +1,11 @@
 import React from 'react'
-
+import Banner from '../../assets/images/banner.png'
 function TopBanner() {
   return (
-    <div className='bg-[#062F8D] w-full h-[100px]'>
-      <h1 className='text-white text-3xl font-bold text-center pt-4'>a banner or an ad or somethin</h1>
+    <div className='bg-[#062F8D] w-full h-full p-2'>
+      <span className='flex flex-row justify-center items-center w-full mt-2'>
+        <img src={Banner} alt='top banner'/>
+      </span>
     </div>
   )
 }
