@@ -42,7 +42,7 @@ function Archive() {
                                             width='150px'
                                             src={entry.image}
                                             alt={`Placeholder for ${entry.version}`}
-                                            className='mb-4 mt-2'
+                                            className='mb-4 mt-2 cursor-pointer'
                                         />
                                     </div>
                                 </td>
@@ -58,7 +58,7 @@ function Archive() {
                 </table>
             </div>
             <>
-                <Modal isOpen={isOpen} onClose={handleCloseModal} description='Modal Description'>
+                <Modal isOpen={isOpen} onClose={handleCloseModal} description='Archived Version'>
                     {/* Add your modal content here */}
                     <p>This is the modal content.</p>
                 </Modal>

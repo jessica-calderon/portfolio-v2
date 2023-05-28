@@ -3,6 +3,7 @@ import { FaComment, FaEnvelope, FaGithubAlt, FaLinkedin, FaStackOverflow, FaTwit
 import BlueSubtitle from "../../common/BlueSubtitle";
 import ContactBtn from "./ContactBtn";
 import ContactForm from "./ContactForm";
+import Modal from "../../common/Modal";
 
 function Contact() {
     const [isContactModalOpen, setIsContactModalOpen] = useState(false);
@@ -14,6 +15,7 @@ function Contact() {
     const handleCloseContactModal = () => {
         setIsContactModalOpen(false);
     };
+
     return (
         <div className='flex flex-col h-full border border-[#64A4CE]'>
             <BlueSubtitle subtitleText={"Contacting Jessica"} />
@@ -33,7 +35,6 @@ function Contact() {
                     icon={<FaLinkedin />}
                     link={"https://LinkedIn.com/in/jessica-calderon"}
                 />
-                {/* TODO: make contact form functional */}
                 <ContactBtn title='Message Me' label={"Message"} link={""} icon={<FaComment />} onClick={handleOpenContactModal} />
             </div>
             <div className='flex flex-row items-center justify-start p-1'>
@@ -45,16 +46,10 @@ function Contact() {
                 />
                 <ContactBtn title='' label={"Twitter"} icon={<FaTwitterSquare />} link={"https://twitter.com/webjessc"} />
             </div>
-            {/* Contact Form Modal */}
-            {isContactModalOpen && (
-                <div className='fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50'>
-                    <div className='bg-white rounded p-8'>
-                        <h2 className='text-2xl font-bold mb-2'>Let's Connect!</h2>
-                        <h3 className='font-bold mb-2'>Send me a message 😙</h3>
-                        <ContactForm onClose={handleCloseContactModal} />
-                    </div>
-                </div>
-            )}
+            <Modal isOpen={isContactModalOpen} onClose={handleCloseContactModal} description="Let's Connect!">
+                <h2 className='font-bold mb-2'>Send me a message 😙</h2>
+                <ContactForm onClose={handleCloseContactModal} />
+            </Modal>
         </div>
     );
 }

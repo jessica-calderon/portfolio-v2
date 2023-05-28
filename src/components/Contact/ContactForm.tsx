@@ -76,15 +76,16 @@ function ContactForm({ onClose }: ContactFormProps) {
                 />
             </div>
             <div className='flex justify-end'>
-                <button type='submit' className='px-4 py-2 bg-blue-500 text-white font-semibold rounded hover:bg-blue-600'>
-                    Submit
-                </button>
-                <button type='button' className='px-4 py-2 ml-2 text-blue-500 font-semibold rounded hover:bg-blue-100' onClick={handleClose}>
-                    Close
-                </button>
+            <button type='submit' className='px-4 py-2 bg-zinc-300 text-black font-tahoma border-2 border-blue-400 font-light rounded hover:opacity-75 focus:outline-none focus:ring-2 focus:ring-blue-300'>
+  Submit
+</button>
+<button type='button' className='px-4 py-2 ml-2 text-red-500 border border-red-800 bg-zinc-200 font-tahoma font-semibold rounded hover:bg-blue-100 focus:outline-none focus:ring-2 focus:ring-blue-300' onClick={handleClose}>
+  Close
+</button>
+
             </div>
             {showSuccessMessage && (
-                <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mt-4">
+                <div className='bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mt-4'>
                     Thank you for your message! I will get back to you soon.
                 </div>
             )}

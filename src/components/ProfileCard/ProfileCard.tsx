@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import EightBitMe from "../../assets/images/8bitme.png";
+import Modal from "../../common/Modal";
 
 interface ProfileCardProps {
     name: string;
@@ -11,6 +12,16 @@ interface ProfileCardProps {
 }
 
 const ProfileCard: React.FC<ProfileCardProps> = ({ name, bio, pronouns, state, country, lastUpdated }) => {
+    const [isResumeModalOpen, setIsResumeModalOpen] = useState(false);
+
+    const handleOpenResumeModal = () => {
+        setIsResumeModalOpen(true);
+    };
+
+    const handleCloseResumeModal = () => {
+        setIsResumeModalOpen(false);
+    };
+
     return (
         <div className='flex-col p-2'>
             <div className='flex flex-row w-full text-left'>
@@ -26,7 +37,9 @@ const ProfileCard: React.FC<ProfileCardProps> = ({ name, bio, pronouns, state, c
                     </div>
                     <div className='flex flex-row items-center mt-2 ml-1'>
                         <span className='text-xs font-semibold'>View My:</span>
-                        <span className='text-xs font-bold mx-1 text-[#2653a7]'>Resume</span> | <span className='text-xs font-bold ml-1 text-[#2653a7]'>Archive</span>
+                        <button onClick={handleOpenResumeModal}>
+                            <span className='text-xs font-bold mx-1 text-[#2653a7]'>Resume</span>
+                        </button>
                     </div>
                 </div>
                 <div id='about' className='text-left flex flex-col ml-4'>
@@ -37,6 +50,11 @@ const ProfileCard: React.FC<ProfileCardProps> = ({ name, bio, pronouns, state, c
                     <p className='text-gray-600'>Last Updated: {lastUpdated}</p>
                 </div>
             </div>
+            <Modal isOpen={isResumeModalOpen} onClose={handleCloseResumeModal} description="My Professional Resume">
+                <div className='iframe-container p-1'>
+                    <iframe height={'500px'} width={'700px'} title="Jessica Calderon's Resume" src='https://drive.google.com/file/d/1r-Bs-a9Eqh5xfufXiNp-TrtaubsCV84-/preview'/>
+                </div>
+            </Modal>
         </div>
     );
 };
