@@ -1,11 +1,11 @@
-import React from "react";
+import { FaComment, FaEnvelope, FaGithubAlt, FaLinkedin, FaStackOverflow, FaTwitterSquare } from "react-icons/fa";
+import BlueSubtitle from "../../common/BlueSubtitle";
 import ContactBtn from "./ContactBtn";
-import { FaEnvelope, FaGithubAlt, FaLinkedin, FaComment, FaStackOverflow, FaTwitterSquare } from "react-icons/fa";
 
 function Contact() {
     return (
         <div className='flex flex-col h-full border border-[#64A4CE]'>
-            <div className='flex p-1 items-center text-left h-[25px] bg-[#64A4CE] text-white font-bold'>Contacting Jessica</div>
+            <BlueSubtitle subtitleText={"Contacting Jessica"} />
             <div className='flex flex-row items-center justify-between p-1'>
                 <ContactBtn title='calderonjessica13@yahoo.com' label={"Email"} icon={<FaEnvelope />} link={"mailto:calderonjessica13@yahoo.com"} />
                 <ContactBtn
