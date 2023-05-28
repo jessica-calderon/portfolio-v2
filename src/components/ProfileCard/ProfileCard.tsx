@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import EightBitMe from "../../assets/images/8bitme.png";
 import Modal from "../../common/Modal";
-
+import Loader from "../../common/Loader";
 interface ProfileCardProps {
     name: string;
     bio: string;
@@ -13,8 +13,18 @@ interface ProfileCardProps {
 
 const ProfileCard: React.FC<ProfileCardProps> = ({ name, bio, pronouns, state, country, lastUpdated }) => {
     const [isResumeModalOpen, setIsResumeModalOpen] = useState(false);
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+        setIsLoading(true);
+    }, [isResumeModalOpen]);
+
+    const handleIframeLoad = () => {
+        setIsLoading(false);
+    };
 
     const handleOpenResumeModal = () => {
+        setIsLoading(true); // set isLoading to true when opening the modal
         setIsResumeModalOpen(true);
     };
 
@@ -50,9 +60,17 @@ const ProfileCard: React.FC<ProfileCardProps> = ({ name, bio, pronouns, state, c
                     <p className='text-gray-600'>Last Updated: {lastUpdated}</p>
                 </div>
             </div>
-            <Modal isOpen={isResumeModalOpen} onClose={handleCloseResumeModal} description="My Professional Resume">
+            <Modal isOpen={isResumeModalOpen} onClose={handleCloseResumeModal} description='My Professional Resume'>
                 <div className='iframe-container p-1'>
-                    <iframe height={'500px'} width={'700px'} title="Jessica Calderon's Resume" src='https://drive.google.com/file/d/1r-Bs-a9Eqh5xfufXiNp-TrtaubsCV84-/preview'/>
+                    {isLoading && <Loader />}
+                    <iframe
+                        style={{ display: isLoading ? "none" : "block" }}
+                        onLoad={handleIframeLoad}
+                        height={"500px"}
+                        width={"700px"}
+                        title="Jessica Calderon's Resume"
+                        src='https://drive.google.com/file/d/1r-Bs-a9Eqh5xfufXiNp-TrtaubsCV84-/preview'
+                    />
                 </div>
             </Modal>
         </div>
