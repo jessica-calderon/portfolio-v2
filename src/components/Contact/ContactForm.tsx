@@ -35,7 +35,7 @@ function ContactForm({ onClose }: ContactFormProps) {
     };
 
     return (
-        <form onSubmit={handleSubmit} className='text-left space-y-4 w-[500px]'>
+        <form onSubmit={handleSubmit} className='text-left space-y-4 md:w-[500px]'>
             <div className='flex flex-col'>
                 <label htmlFor='name' className='text-sm font-semibold text-gray-700'>
                     Name
