@@ -1,17 +1,22 @@
 {
   "files": {
-    "main.css": "/portfolio-v2/static/css/main.22f46cfb.css",
-    "main.js": "/portfolio-v2/static/js/main.bd75e7cb.js",
+    "main.css": "/portfolio-v2/static/css/main.f81a6121.css",
+    "main.js": "/portfolio-v2/static/js/main.54bdc1b4.js",
     "static/js/787.2c40e194.chunk.js": "/portfolio-v2/static/js/787.2c40e194.chunk.js",
+    "static/media/bantr-screenshot.png": "/portfolio-v2/static/media/bantr-screenshot.ee82791e2b480a92309a.png",
+    "static/media/teamProf.png": "/portfolio-v2/static/media/teamProf.983cd113a68ebf20e240.png",
     "static/media/8bitme.png": "/portfolio-v2/static/media/8bitme.d2c35f1e9c63044f8f8b.png",
+    "static/media/dreamNotes.png": "/portfolio-v2/static/media/dreamNotes.2f0b52495ff73ba56a39.png",
     "static/media/banner.png": "/portfolio-v2/static/media/banner.49dcdfe0adff8056aeb3.png",
+    "static/media/bantr.png": "/portfolio-v2/static/media/bantr.c5595f6e3727f6591338.png",
+    "static/media/techBlog.png": "/portfolio-v2/static/media/techBlog.9a48fa0e4a0302200dcc.png",
     "index.html": "/portfolio-v2/index.html",
-    "main.22f46cfb.css.map": "/portfolio-v2/static/css/main.22f46cfb.css.map",
-    "main.bd75e7cb.js.map": "/portfolio-v2/static/js/main.bd75e7cb.js.map",
+    "main.f81a6121.css.map": "/portfolio-v2/static/css/main.f81a6121.css.map",
+    "main.54bdc1b4.js.map": "/portfolio-v2/static/js/main.54bdc1b4.js.map",
     "787.2c40e194.chunk.js.map": "/portfolio-v2/static/js/787.2c40e194.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.22f46cfb.css",
-    "static/js/main.bd75e7cb.js"
+    "static/css/main.f81a6121.css",
+    "static/js/main.54bdc1b4.js"
   ]
 }
