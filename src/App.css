@@ -15,7 +15,19 @@ button {
 a:hover {
   color: darkred;
 }
+.animated-text-container {
+  animation: bounce-left-right 1s infinite;
+}
 
+@keyframes bounce-left-right {
+  0%, 100% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(50px);
+  }
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

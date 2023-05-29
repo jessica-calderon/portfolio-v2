@@ -19,8 +19,6 @@ import UIButton from "../../ui-components/UIButton";
 import CQ from "../../assets/images/portfolio/CQ.png";
 import CodeQuizScreenshot from "../../assets/images/portfolio/code-quiz-static.png";
 
-const placeholderImage = "https://via.placeholder.com/300x300";
-
 const ImageGrid: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [modalTitle, setModalTitle] = useState("");
@@ -37,7 +35,15 @@ const ImageGrid: React.FC = () => {
     };
 
     return (
-        <div className='flex flex-col w-full mx-2'>
+        <div className='flex flex-col w-full mx-1'>
+            <div className='flex flex-row font-bold'>
+                <div className='text-sm mt-1'>
+                    <span className='mr-1'>Displaying</span>
+                    <span className='text-red-700 mr-1'>8</span>
+                    of
+                    <a href='https://github.com/jessica-calderon/' rel='noreferrer' target="_blank" className='text-red-700 hover:text-[#07359E] mx-1'>a lot more</a>projects
+                </div>
+                </div>
             <div className='flex flex-row gap-8 justify-between w-full'>
                 <ClickableImage
                     label={"Bantr"}

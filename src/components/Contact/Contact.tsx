@@ -33,7 +33,7 @@ function Contact() {
                     title='LinkedIn.com/in/jessica-calderon'
                     label={"LinkedIn"}
                     icon={<FaLinkedin />}
-                    link={"https://LinkedIn.com/in/jessica-calderon"}
+                    link={"https://LinkedIn.com/in/jessica-calderon-00"}
                 />
                 <ContactBtn title='Message Me' label={"Message"} link={""} icon={<FaComment />} onClick={handleOpenContactModal} />
             </div>
