@@ -16,6 +16,8 @@ import WorkDayScreenshot from "../../assets/images/portfolio/work-day-scheduler-
 import ClickableImage from "../../common/ClickableImage";
 import Modal from "../../common/Modal";
 import UIButton from "../../ui-components/UIButton";
+import CQ from "../../assets/images/portfolio/CQ.png";
+import CodeQuizScreenshot from "../../assets/images/portfolio/code-quiz-static.png";
 
 const placeholderImage = "https://via.placeholder.com/300x300";
 
@@ -205,9 +207,25 @@ const ImageGrid: React.FC = () => {
                     }
                 />
                 <ClickableImage
-                    label={"Eight"}
-                    src={placeholderImage}
-                    onClick={() => handleOpenModal("Eight", <p>This is the modal content for Eight.</p>)}
+                    label={"Code Quiz"}
+                    src={CQ}
+                    onClick={() =>
+                        handleOpenModal(
+                            "Code Quiz",
+                            <div className='flex flex-col gap-2 items-center max-w-[500px]'>
+                                <div className='mb-2'>
+                                    <img src={CodeQuizScreenshot} alt='Code Quiz' style={{ maxWidth: "100%", height: "auto" }} />
+                                </div>
+                                <div>
+                                    <p>A timed, front-end, web-based quiz focused on JavaScript fundamentals.</p>
+                                    <p>
+                                        <span className='font-bold'>Technologies Used:</span> HTML, CSS, JavaScript
+                                    </p>
+                                </div>
+                                <UIButton href='https://github.com/jessica-calderon/code-quiz'>Repository</UIButton>
+                            </div>
+                        )
+                    }
                 />
             </div>
             <Modal isOpen={isOpen} onClose={handleCloseModal} description={`Project: ${modalTitle}`}>
