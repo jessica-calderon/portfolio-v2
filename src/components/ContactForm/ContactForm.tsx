@@ -45,7 +45,7 @@ function ContactForm({ onClose }: ContactFormProps) {
                     id='name'
                     value={name}
                     onChange={(e) => setName(e.target.value)}
-                    className='mt-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500'
+                    className='mt-1 px-4 py-2 border border-black rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500'
                     required
                 />
             </div>
@@ -58,7 +58,7 @@ function ContactForm({ onClose }: ContactFormProps) {
                     id='email'
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className='mt-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500'
+                    className='mt-1 px-4 py-2 border border-black rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500'
                     required
                 />
             </div>
@@ -71,7 +71,7 @@ function ContactForm({ onClose }: ContactFormProps) {
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     rows={4}
-                    className='mt-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500'
+                    className='mt-1 px-4 py-2 border border-black rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500'
                     required
                 />
             </div>

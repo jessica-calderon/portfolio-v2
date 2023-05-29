@@ -1,4 +1,9 @@
-.image-grid img {
+/* .image-grid img {
     width: 100px;
     height: 100px;
-}
+} */
+.modal-content img {
+    max-width: 100%;
+    height: auto;
+  }
+  

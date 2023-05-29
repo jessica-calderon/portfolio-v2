@@ -50,15 +50,15 @@ const ProfileCard: React.FC<ProfileCardProps> = ({ name, bio, pronouns, state, c
 			  <span className="text-xs ml-1">motivated 😈</span>
 			</div>
 			<div className="flex flex-row items-center mt-2 ml-1">
-			  <span className="text-xs font-semibold">View My:</span>
+			  <span className="text-xs font-semibold mt-px">View My:</span>
 			  <button onClick={handleOpenResumeModal}>
-				<span className="text-xs font-bold mx-1 text-[#2653a7]">
+				<span className="text-xs font-bold mx-1 text-[#2653a7] hover:text-red-700">
 				  Resume
 				</span>
 			  </button>
 			</div>
 		  </div>
-		  <div id="about" className="text-left flex flex-col ml-4">
+		  <div id="about" className="text-sm text-left h-[210px] justify-start flex flex-col ml-4">
 			<p className="text-gray-600">{bio}</p>
 			<p className="text-gray-600">{pronouns}</p>
 			<p className="text-gray-600">{state}</p>

@@ -42,11 +42,11 @@ function Archive() {
                                             width='150px'
                                             src={entry.image}
                                             alt={`Placeholder for ${entry.version}`}
-                                            className='mb-4 mt-2 cursor-pointer border border-2 border-[#125089]'
+                                            className='hover:opacity-90 mb-4 mt-2 cursor-pointer border border-2 border-[#125089]'
                                         />
                                     </div>
                                 </td>
-                                <td className='py-2 px-3 text-normal text-left text-black bg-[#E4BF82]'>
+                                <td className='py-2 px-3 text-sm text-left text-black bg-[#E4BF82]'>
                                     <div className='flex flex-col items-start h-[200px]'>
                                         <span className='text-normal font-bold mb-2'>{entry.date}</span>
                                         <span>{entry.text}</span>

@@ -17,10 +17,10 @@ const Details: React.FC = () => {
                 <tbody className='p-2'>
                     {details.map((details, index) => (
                         <tr key={index} className='border-4 border-white'>
-                            <td className='py-2 w-[30%] text-left px-3 border-r-4 border-white text-[#07359E] font-semibold bg-[#B2D0ED] font-medium text-gray-800'>
+                            <td className='py-2 w-[30%] text-left px-3 border-r-4 border-white text-sm text-[#07359E] font-semibold bg-[#B2D0ED] text-gray-800'>
                                 {details.category}
                             </td>
-                            <td className='py-2 px-3 text-normal text-left text-black bg-[#D7E6FA]'>{details.text}</td>
+                            <td className='py-2 px-3 text-sm text-left text-black bg-[#D7E6FA]'>{details.text}</td>
                         </tr>
                     ))}
                 </tbody>

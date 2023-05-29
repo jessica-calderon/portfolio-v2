@@ -12,6 +12,10 @@ button {
   cursor: pointer;
 }
 
+a:hover {
+  color: darkred;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

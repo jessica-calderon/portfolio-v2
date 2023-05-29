@@ -18,11 +18,11 @@ const Schools: React.FC = () => {
                         <tr key={index} className='border-4 border-white'>
                             <td className='py-2 w-[70%] text-left px-3 border-r-4 border-white  bg-[#B2D0ED]'>
                                 <div className='flex flex-col w-full'>
-                                    <span className='text-[#07359E] font-semibold font-medium text-gray-800'>{schools.name}</span>
-                                    <span className='text-black'>{schools.details}</span>
+                                    <span className='text-[#07359E] font-semibold text-sm'>{schools.name}</span>
+                                    <span className='text-sm text-black'>{schools.details}</span>
                                 </div>
                             </td>
-                            <td className='py-2 px-3 text-normal text-left text-black bg-[#D7E6FA]'>{schools.graduated}</td>
+                            <td className='py-2 px-3 text-sm text-left text-black bg-[#D7E6FA]'>{schools.graduated}</td>
                         </tr>
                     ))}
                 </tbody>

@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { FaComment, FaEnvelope, FaGithubAlt, FaLinkedin, FaStackOverflow, FaTwitterSquare } from "react-icons/fa";
 import BlueSubtitle from "../../common/BlueSubtitle";
-import ContactBtn from "./ContactBtn";
-import ContactForm from "./ContactForm";
+import ContactBtn from "../../common/ContactBtn";
+import ContactForm from "../ContactForm/ContactForm";
 import Modal from "../../common/Modal";
 
 function Contact() {
