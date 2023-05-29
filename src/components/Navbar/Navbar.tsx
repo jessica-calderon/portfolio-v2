@@ -29,7 +29,7 @@ function Navbar() {
         setIsLoading(false);
     };
     const handleOpenResumeModal = () => {
-        setIsLoading(true); // set isLoading to true when opening the modal
+        setIsLoading(true);
         setIsResumeModalOpen(true);
     };
 
@@ -38,30 +38,33 @@ function Navbar() {
     };
 
     return (
-        <nav className='flex flex-row gap-2 items-center justify-center bg-[#6599CC] py-1 h-[40px] w-full text-white'>
-            <Link to='/' className='navbar-link'>
-                Home
-            </Link>{" "}
-            |{" "}
-            <button className='navbar-link hover:text-red-700' onClick={handleOpenContactModal}>
-                Message
-            </button>{" "}
-            |{" "}
-            <a href='https://github.com/jessica-calderon' target='_blank' rel='noopener noreferrer' className='navbar-link'>
-                GitHub
-            </a>{" "}
-            |{" "}
-            <a href='https://www.linkedin.com/in/jessica-calderon-00' target='_blank' rel='noopener noreferrer' className='navbar-link'>
-                LinkedIn
-            </a>{" "}
-            |{" "}
-            <a href='mailto:calderonjessica13@yahoo.com' className='navbar-link'>
-                Email
-            </a>{" "}
-            |{" "}
-            <button className='navbar-link hover:text-red-700' onClick={handleOpenResumeModal}>
-                Resume
-            </button>
+        <nav className='flex flex-col sm:flex-row gap-2 items-center justify-center bg-[#6599CC] py-1 h-full w-full text-white'>
+            <div className='flex flex-wrap justify-center px-4'>
+                {" "}
+                <Link to='/' className='navbar-link'>
+                    Home
+                </Link>
+                <span className='mx-1'>|</span>
+                <button className='navbar-link hover:text-red-700' onClick={handleOpenContactModal}>
+                    Message
+                </button>
+                <span className='mx-1'>|</span>
+                <a href='https://github.com/jessica-calderon' target='_blank' rel='noopener noreferrer' className='navbar-link'>
+                    GitHub
+                </a>
+                <span className='mx-1'>|</span>
+                <a href='https://www.linkedin.com/in/jessica-calderon-00' target='_blank' rel='noopener noreferrer' className='navbar-link'>
+                    LinkedIn
+                </a>
+                <span className='mx-1'>|</span>
+                <a href='mailto:calderonjessica13@yahoo.com' className='navbar-link'>
+                    Email
+                </a>
+                <span className='mx-1'>|</span>
+                <button className='navbar-link hover:text-red-700' onClick={handleOpenResumeModal}>
+                    Resume
+                </button>
+            </div>
             <Modal onClose={handleCloseContactModal} description="Let's Connect!" isOpen={isOpen}>
                 <h2 className='font-bold text-black mb-2'>Send me a message 😙</h2>
                 <ContactForm onClose={handleCloseContactModal} />

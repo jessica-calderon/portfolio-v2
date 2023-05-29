@@ -67,13 +67,13 @@ function Archive() {
                                             onClick={() => handleOpenModal(entry)}
                                             width='150px'
                                             src={entry.image}
-                                            alt={`Placeholder for ${entry.version}`}
+                                            alt={`${entry.version}`}
                                             className='hover:opacity-90 mb-4 mt-2 cursor-pointer border border-2 border-[#125089]'
                                         />
                                     </div>
                                 </td>
                                 <td className='py-2 px-3 text-sm text-left text-black bg-[#E4BF82]'>
-                                    <div className='flex flex-col items-start h-[200px]'>
+                                    <div className='flex flex-col items-start min-h-[200px]'>
                                         <span className='text-normal font-bold mb-2'>{entry.date}</span>
                                         <span>{entry.text}</span>
                                     </div>
@@ -85,7 +85,7 @@ function Archive() {
             </div>
             {isOpen && modalContent && (
                 <Modal isOpen={isOpen} onClose={handleCloseModal} description={modalContent.version}>
-                    <img className='md:w-[800px]' alt='modalContent.version' src={modalContent.screenshot} />
+                    <img className='sm:w-[300px] md:w-[800px]' alt='modalContent.version' src={modalContent.screenshot} />
                 </Modal>
             )}
         </div>
