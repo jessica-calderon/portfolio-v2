@@ -4,7 +4,7 @@ import './index.css';
 import './App.css';
 import 'tailwindcss/tailwind.css'
 import { BrowserRouter as Router } from 'react-router-dom';
-import BodyContainer from './pages/BodyContainer/BodyContainer';
+import BodyContainer from './components/BodyContainer/BodyContainer';
 
 function App() {
   return (

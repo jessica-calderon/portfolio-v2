@@ -1,6 +1,6 @@
-import Footer from '../../components/Footer/Footer';
-import Navbar from '../../components/Navbar/Navbar';
-import TopBanner from '../../components/TopBanner/TopBanner';
+import Footer from '../Footer/Footer';
+import Navbar from '../Navbar/Navbar';
+import TopBanner from '../TopBanner/TopBanner';
 import LeftCol from '../LeftCol/LeftCol';
 import RightCol from '../RightCol/RightCol';
 

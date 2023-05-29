@@ -6,7 +6,7 @@ function Blurbs() {
     return (
         <div className='flex flex-col h-full'>
             <Title titleText={"Jessica's Blurbs"} />
-            <div className='text-left ml-1 flex flex-col gap-1 h-full'>
+            <div id='about' className='text-left ml-1 flex flex-col gap-1 h-full'>
                 <About />
                 <TechStack />
                 <ResumeBlurb />
