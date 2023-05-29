@@ -1,22 +1,31 @@
 {
   "files": {
     "main.css": "/portfolio-v2/static/css/main.f81a6121.css",
-    "main.js": "/portfolio-v2/static/js/main.54bdc1b4.js",
+    "main.js": "/portfolio-v2/static/js/main.dc6b5dd4.js",
     "static/js/787.2c40e194.chunk.js": "/portfolio-v2/static/js/787.2c40e194.chunk.js",
+    "static/media/readme-generator-static.png": "/portfolio-v2/static/media/readme-generator-static.d4f31a1c1fa719007a76.png",
+    "static/media/dream-notes.png": "/portfolio-v2/static/media/dream-notes.77079e181f9a823cf787.png",
+    "static/media/team-profile-generator.png": "/portfolio-v2/static/media/team-profile-generator.5907b20648d9b552c83a.png",
+    "static/media/pollen-tracker-static.png": "/portfolio-v2/static/media/pollen-tracker-static.0677287469a38695331e.png",
+    "static/media/talking-tech-static.png": "/portfolio-v2/static/media/talking-tech-static.57f69aecd0f0abe57d99.png",
+    "static/media/work-day-scheduler-static.png": "/portfolio-v2/static/media/work-day-scheduler-static.fb1be9a0e94ec5412fe8.png",
     "static/media/bantr-screenshot.png": "/portfolio-v2/static/media/bantr-screenshot.ee82791e2b480a92309a.png",
+    "static/media/Readme.png": "/portfolio-v2/static/media/Readme.3f777e0fdb066fe7d8ea.png",
     "static/media/teamProf.png": "/portfolio-v2/static/media/teamProf.983cd113a68ebf20e240.png",
     "static/media/8bitme.png": "/portfolio-v2/static/media/8bitme.d2c35f1e9c63044f8f8b.png",
     "static/media/dreamNotes.png": "/portfolio-v2/static/media/dreamNotes.2f0b52495ff73ba56a39.png",
     "static/media/banner.png": "/portfolio-v2/static/media/banner.49dcdfe0adff8056aeb3.png",
     "static/media/bantr.png": "/portfolio-v2/static/media/bantr.c5595f6e3727f6591338.png",
     "static/media/techBlog.png": "/portfolio-v2/static/media/techBlog.9a48fa0e4a0302200dcc.png",
+    "static/media/WDScheduler.png": "/portfolio-v2/static/media/WDScheduler.54a41c45f15712c725f4.png",
+    "static/media/pollenTracker.png": "/portfolio-v2/static/media/pollenTracker.6630573cb6237bc466b7.png",
     "index.html": "/portfolio-v2/index.html",
     "main.f81a6121.css.map": "/portfolio-v2/static/css/main.f81a6121.css.map",
-    "main.54bdc1b4.js.map": "/portfolio-v2/static/js/main.54bdc1b4.js.map",
+    "main.dc6b5dd4.js.map": "/portfolio-v2/static/js/main.dc6b5dd4.js.map",
     "787.2c40e194.chunk.js.map": "/portfolio-v2/static/js/787.2c40e194.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f81a6121.css",
-    "static/js/main.54bdc1b4.js"
+    "static/js/main.dc6b5dd4.js"
   ]
 }
